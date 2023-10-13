@@ -1,0 +1,236 @@
+:root {
+    --primaryColor: #EF1E33;
+    --primaryColorHover: #C41D2E;
+    --white: #fff;
+    
+  }
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../assets/fonts/Poppins-Regular.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif, Verdana, Tahoma;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f0f8fd;
+}
+
+/* index main-page */
+
+.main-page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr min-content;
+}
+
+/* left content */
+
+.left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url('../../images/lagos.jpg');
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.left-content div{
+    display: flex;
+    align-items: center;
+    margin: 4rem;
+    color: var(--white);
+}
+
+.left-content i {
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.left-content-heading{
+    font-size: 2rem;
+}
+
+/* right */
+
+.right{
+    grid-column: 2 / -1;
+    grid-row: 1/2;
+    position: relative;
+}
+
+.right-content-form{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+.right-content-form div{
+    position: relative;
+}
+
+.right-content-form input{
+    width: 20rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    transition: background-color 0.3s;
+}
+
+.right-content-form input:focus{
+    background-color: #d9ebf7;
+}
+
+.right-content-form label{
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #a7a6a6;
+}
+
+.btn-top{
+    width: 8rem;
+    height: 4.4rem;
+    background-color: var(--white);
+    color: var(--primaryColor);
+    border: 0.1rem solid var(--primaryColor);
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-top:hover{
+    background-color: var(--primaryColorHover);
+    color: var(--white);
+}
+
+.sign-content{
+    width:100%;
+    padding:10em;
+}
+
+.middle-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.middle-content i{
+    font-size: 0.2rem;
+}
+
+.middle-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+}
+
+.middle-content h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.middle-content button{
+    margin: 0.8rem 0;
+    padding: 00.5rem;
+    border: 0.1rem solid var(--primaryColor);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-up{
+    background-color: var(--primaryColor);
+    color: var(--white);
+}
+
+.sign-up:hover{
+    background-color: var(--primaryColorHover);
+}
+
+.log-in{
+    background-color: var(--white);
+}
+
+.log-in:hover{
+    background-color: var(--primaryColorHover);
+    color: var(--white);
+}
+
+
+/* footer */
+
+.main-page-footer{
+    grid-column: 1/-1;
+    grid-row: 2/ -1;
+    background-color: #f5f4f4;
+    padding: 1.5rem;
+    border-top: 0.1rem solid #ddd;
+}
+
+.main-page-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.main-page-footer a{
+    font-size: 1rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: 300;
+}
+.box-content{
+    padding:0.5em !important;
+}
+.sub-box-content{
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1) !;
+    background-color:white !important;
+    padding:3em !important;
+    border-radius: 20px !important;
+}
+.input-size{
+    width:100% !important;
+    height: 40px !important;
+    font-size:1.5rem !important;
+}
+.sub-box-content > img{
+    width:40% !important;
+    display: block !important; 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    width: 50% !important; 
+}
